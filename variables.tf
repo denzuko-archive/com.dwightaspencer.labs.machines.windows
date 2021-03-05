@@ -18,8 +18,8 @@ variable "aws_labels"      {
             "net.matrix.locality"     = "Dallas"
             "net.matrix.state"        = "Texas"
             "net.matrix.country"      = "USA"
-            "net.matrix.environment"  = vars.environment
-            "net.matrix.application"  = "development"
+            "net.matrix.environment"  = "development"
+            "net.matrix.application"  = "windows desktop"
             "net.matrix.role"         = "labs"
             "net.matrix.owner"        = "FC13F74B@matrix.net"
             "net.matrix.customer"     = "PVT-01"
