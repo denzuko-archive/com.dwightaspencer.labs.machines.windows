@@ -1,6 +1,6 @@
 variable "environment"     { default = "ustx-dev-lab" }
 variable "instance_type"   { default = "t2.medium" }
-variable "region"          { default = "${env.AWS_DEFAULT_REGION}" }
+variable "region"          { default = "us-east-1" }
 variable "monitoring"      { default = true }
 variable "scaling"	   {
       type    = map
