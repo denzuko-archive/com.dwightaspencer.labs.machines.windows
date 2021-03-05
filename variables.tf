@@ -7,6 +7,7 @@ variable "scaling"	   {
       default = {
             "min"    = 0
             "max"    = 1
+      }
 }
 variable "aws_labels"      { 
       type = map
