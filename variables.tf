@@ -1,10 +1,13 @@
-variable "keypair"         { default = "${env.AWS_KEYPAIR_NAME}"
-variable "instance_type"   { default = "t2.micro" }
-variable "security_groups" { default = "${env.AWS_SECURITY_GROUPS}" }
-variable "monitoring"      { default = true }
-variable "ami_id"          { default = "ami-fa05b392" }
-variable "subnet_id"       { default = "${env.AWS_SUBNET}" }
+variable "environment"     { default = "ustx-dev-lab" }
+variable "instance_type"   { default = "t2.medium" }
 variable "region"          { default = "${env.AWS_DEFAULT_REGION}" }
+variable "monitoring"      { default = true }
+variable "scaling"	   {
+      type    = "map"
+      default = {
+            "min"    = 0
+            "max"    = 1
+}
 variable "aws_labels"      { 
       type = "map"
       default = {

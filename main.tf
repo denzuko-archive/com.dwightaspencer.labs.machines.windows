@@ -1,9 +1,9 @@
 module "ecs-windows" {
   source	= "jjno91/ecs-windows/aws"
   version	= "0.1.0"
-  instance_type	= "t3.medium"
+  env		= vars.environment
+  min_size	= vars.scaling['min']
+  max_size	= vars.scaling['max']
+  instance_type	= vars.instance_type
   tags		= vars.aws_labels
-  min_size	= 0
-  max_size	= 1
-  env		= "ustx-dev-lab"
 }
