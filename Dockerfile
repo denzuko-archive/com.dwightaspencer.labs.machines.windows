@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:light AS runner
+FROM hashicorp/terraform:1.0.6 AS runner
 MAINTAINER "Dwight Spencer (@denzuko)"
 
 LABEL org.label-schema.schema-version = "1.0"
